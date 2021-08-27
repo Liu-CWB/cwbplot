@@ -9,6 +9,8 @@ Welcome to cwbplot's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   ./use_example
 
 
 
