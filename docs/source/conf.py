@@ -26,6 +26,11 @@ release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
 
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'material'
+
+
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
