@@ -35,5 +35,30 @@ example
 colormap (default)
 ^^^^^
 
+**Rainfall-**
+
+*nwprfs*
+
+.. image:: ./image/colormap/rain_nwprfs.png
+
+*NPD*
+
+.. image:: ./image/colormap/rain_npd.png
 
 
+**Radar-**
+
+*mosaic*
+
+.. image:: ./image/colormap/radar_mosaic.png
+
+*cwbweb*
+
+.. image:: ./image/colormap/radar_cwbweb.png
+
+
+**Surface** **Temprature-**
+
+*cwbweb*
+
+.. image:: ./image/colormap/surfT_cwbweb.png
