@@ -37,7 +37,9 @@ colormap
 
 **Rainfall-**
 
-*nwprfs (default)* rain()
+*nwprfs (default)* 
+
+.. py:method:: `cwbplot.cwb_colorbar.rain`
 
 .. image:: ./image/colormap/rain_nwprfs.png
 
