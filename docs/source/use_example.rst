@@ -32,33 +32,33 @@ example
 .. image:: ./image/raincolorbar_cwbrfs.png
  
 
-colormap (default)
+colormap
 ^^^^^
 
 **Rainfall-**
 
-*nwprfs*
+*nwprfs (default)* rain()
 
 .. image:: ./image/colormap/rain_nwprfs.png
 
-*NPD*
+*NPD* rain(style="NPD")
 
 .. image:: ./image/colormap/rain_npd.png
 
 
 **Radar-**
 
-*mosaic*
+*mosaic (default)* radar()
 
 .. image:: ./image/colormap/radar_mosaic.png
 
-*cwbweb*
+*cwbweb* radar(style="cwbweb")
 
 .. image:: ./image/colormap/radar_cwbweb.png
 
 
 **Surface** **Temprature-**
 
-*cwbweb*
+*cwbweb (default)* surfT()
 
 .. image:: ./image/colormap/surfT_cwbweb.png
