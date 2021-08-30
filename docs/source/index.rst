@@ -12,7 +12,13 @@ Welcome to cwbplot's documentation!
    
    ./use_example
 
+Whats new
+=========
+2021.8.30
 
+    * Add mosaic colorbar
+
+    * Change one of radar colorbar style name to cwbweb
 
 Indices and tables
 ==================
