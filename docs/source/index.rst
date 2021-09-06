@@ -11,6 +11,7 @@ Welcome to cwbplot's documentation!
    :caption: Contents:
    
    ./use_example
+   ./gallery_cwb
 
 Whats new
 =========
