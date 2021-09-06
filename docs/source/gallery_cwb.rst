@@ -4,6 +4,7 @@ Gallery
 Basemap
 -----
 The projection setting of this graph is done by basemap, but strongely change to use cartopy. 
+
 .. panels::
     :column: text-center col-lg-6 col-md-6 col-sm-12 col-xs-12 p-2
     :card: +my-2
