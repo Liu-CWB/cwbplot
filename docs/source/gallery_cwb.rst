@@ -7,15 +7,10 @@ The projection setting of this graph is done by basemap, but strongely change to
 
 
 .. figure:: image/_gallery/12acc_rainfall_basemap.png
+    :width: 600
+    :target: https://cwbplot.readthedocs.io/en/latest/example/12accrain_basemap.html
    
-:ref:`example/12accrain_basemap <./example/12accrain_basemap.rst>`   
-
-
-.. figure:: image/_gallery/12acc_rainfall_basemap.png
-   :width: 600
-     
-   
-   Rainfall 
+Rainfall 
    
 .. toctree::
     :maxdepth: 1
