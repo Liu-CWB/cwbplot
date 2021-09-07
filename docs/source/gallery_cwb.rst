@@ -12,7 +12,7 @@ The projection setting of this graph is done by basemap, but strongely change to
     :body: d-non
 
     ---
-    :img-top: _static/thumbnails/ERA5-GRIB-example.png
+    :img-top: image/_gallery/12acc_rainfall_basemap.png
     ++++
     .. link-button:: examples/ERA5-GRIB-example
         :type: ref
