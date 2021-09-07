@@ -9,7 +9,7 @@ The projection setting of this graph is done by basemap, but strongely change to
 .. figure:: image/_gallery/12acc_rainfall_basemap.png
    
    
-:ref:`example/12accrain_basemap.rst`   
+:ref:`example/12accrain_basemap`   
 
 
 .. figure:: image/_gallery/12acc_rainfall_basemap.png
