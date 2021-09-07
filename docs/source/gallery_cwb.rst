@@ -14,11 +14,15 @@ The projection setting of this graph is done by basemap, but strongely change to
     ---
     :img-top: ./image/_gallery/12acc_rainfall_basemap.png
     ++++
-    .. link-button:: ./example/12accrain_basemap.rst
+    .. link-button:: ./example/12accrain_basemap
         :type: ref
         :text: CWB opendata- GRIB Data Example
         :classes: btn-outline-dark btn-block stretched-link
-
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+    
+    example/12accrain_basemap
 
 
 Cartopy
