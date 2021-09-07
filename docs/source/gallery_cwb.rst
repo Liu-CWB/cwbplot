@@ -5,19 +5,12 @@ Basemap
 -----
 The projection setting of this graph is done by basemap, but strongely change to use cartopy. 
 
-.. panels::
-    :column: text-center col-lg-6 col-md-6 col-sm-12 col-xs-12 p-2
-    :card: +my-2
-    :img-top-cls: w-75 m-auto p-2
-    :body: d-non
-
-    ---
-    :img-top: image/_gallery/12acc_rainfall_basemap.png
-    ++++
-    .. link-button:: example/12accrain_basemap
-        :type: ref
-        :text: CWB opendata- GRIB Data Example
-        :classes: btn-outline-dark btn-block stretched-link
+.. figure:: image/_gallery/12acc_rainfall_basemap.png
+   :width: 600
+   :target: example/12accrain_basemap.rst
+   
+   Rainfall 
+   
 .. toctree::
     :maxdepth: 1
     :hidden:
