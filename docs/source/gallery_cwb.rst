@@ -7,7 +7,7 @@ The projection setting of this graph is done by basemap, but strongely change to
 
 .. figure:: image/_gallery/12acc_rainfall_basemap.png
    :width: 600
-   :target: example/12accrain_basemap.rst
+   :target: example/12accrain_basemap
    
    Rainfall 
    
