@@ -12,9 +12,9 @@ The projection setting of this graph is done by basemap, but strongely change to
     :body: d-non
 
     ---
-    :img-top: ./image/_gallery/12acc_rainfall_basemap.png
+    :img-top: image/_gallery/12acc_rainfall_basemap.png
     ++++
-    .. link-button:: ./example/12accrain_basemap
+    .. link-button:: example/12accrain_basemap
         :type: ref
         :text: CWB opendata- GRIB Data Example
         :classes: btn-outline-dark btn-block stretched-link
