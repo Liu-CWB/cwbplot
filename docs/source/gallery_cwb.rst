@@ -11,12 +11,31 @@ The projection setting of this graph is done by basemap, but strongely change to
     - .. figure:: image/_gallery/12acc_rainfall_basemap.png
         :width: 600
         :target: https://cwbplot.readthedocs.io/en/latest/example/12accrain_basemap.html
+        
+        Rainfall
     
     - .. figure:: image/_gallery/surftemp_basemap.png
         :width: 600 
         :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
-   
-Rainfall 
+        
+        Surface Temperature and Sea Level Pressure
+        
+
+.. hlist::
+    :columns: 2
+
+    - .. figure:: image/_gallery/12acc_rainfall_basemap.png
+        :width: 600
+        :target: https://cwbplot.readthedocs.io/en/latest/example/12accrain_basemap.html
+        
+        Rainfall
+    
+    - .. figure:: image/_gallery/surftemp_basemap.png
+        :width: 600 
+        :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
+        
+        Surface Temperature and Sea Level Pressure   
+
    
 .. toctree::
     :maxdepth: 1
