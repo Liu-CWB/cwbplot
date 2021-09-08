@@ -1,5 +1,20 @@
-The data of this example are downloaded from cwb opendata website
+Rainfall
 -----
+
+Plotting rainfall contour with wind barb.
+
+CWB regional numerical weather model data are used in this example.
+
+Data format: Grib2
+
+Data source: CWB opendata website
+
+^^^^^
+
+.. figure:: ../image/_gallery/12acc_rainfall_basemap.png
+   :width: 400
+   :align: center
+
 
 .. code-block:: python
 
@@ -43,4 +58,4 @@ The data of this example are downloaded from cwb opendata website
     plt.title("Valid Time:{}".format(valDate),loc="right",fontsize=16)
     plt.suptitle("In-Fa Typhoon- 12 hr accumulated rainfall",y=0.93,fontsize=20)
 
-.. image:: ../image/_gallery/12acc_rainfall_basemap.png
+
