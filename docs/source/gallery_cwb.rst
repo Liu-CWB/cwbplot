@@ -14,7 +14,7 @@ The projection setting of this graph is done by basemap, but strongely change to
     
     - .. figure:: image/_gallery/surftemp_basemap.png
         :width: 600 
-        :target: https://cwbplot.readthedocs.io/en/latest/example/suftemp_basemap.html
+        :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
    
 Rainfall 
    
@@ -23,7 +23,7 @@ Rainfall
     :hidden:
     
     example/12accrain_basemap
-    example/suftemp_basemap
+    example/surftemp_basemap
 
 
 Cartopy
