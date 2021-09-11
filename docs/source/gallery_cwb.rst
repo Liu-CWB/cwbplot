@@ -24,9 +24,9 @@ The projection setting of this graph is done by basemap, but strongely change to
 .. hlist::
     :columns: 2
 
-    - .. figure:: image/_gallery/12acc_rainfall_basemap.png
+    - .. figure:: image/_gallery/rh_streamline_basemap.png
         :width: 600
-        :target: https://cwbplot.readthedocs.io/en/latest/example/12accrain_basemap.html
+        :target: https://cwbplot.readthedocs.io/en/latest/example/rh_streamline_basemap.html
         
         Rainfall
     
