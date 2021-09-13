@@ -43,11 +43,9 @@ Data source: CWB opendata website
     v10m = basicvar_84[67]["values"]
     
     
-    lambert = crs.LambertConformal(central_longitude = lon_0, central_latitude = lat_0, \
-                               standard_parallels = (lat_1,lat_2))
+    lambert = crs.LambertConformal(central_longitude = lon_0, central_latitude = lat_0, standard_parallels = (lat_1,lat_2))
 
-    coastline_shf = ShapelyFeature(shpreader.Reader("ne_10m_coastline.shp").geometries(), crs.PlateCarree(), \
-                               facecolor="none",edgecolor='sienna')
+    coastline_shf = ShapelyFeature(shpreader.Reader("ne_10m_coastline.shp").geometries(), crs.PlateCarree(), facecolor="none",edgecolor='sienna')
 
     fig = plt.figure(figsize=(16,12))
     axs = plt.axes(projection=lambert)
@@ -57,8 +55,7 @@ Data source: CWB opendata website
     raincbar = cwbcbar.rain(style="NPD")
     ctf = plt.contourf(lons, lats, acc12rain, **raincbar, transform=crs.PlateCarree())
     gap = 25
-    plt.barbs(lons[::gap,::gap], lats[::gap,::gap], u10m[::gap,::gap], v10m[::gap,::gap] ,\
-            length=5,barbcolor="navy", transform=crs.PlateCarree())
+    plt.barbs(lons[::gap,::gap], lats[::gap,::gap], u10m[::gap,::gap], v10m[::gap,::gap], length=5,barbcolor="navy", transform=crs.PlateCarree())
     cbar = plt.colorbar(ctf,orientation='horizontal',pad=0.03,ticks=raincbar["levels"][1:-1])
     cbar.ax.tick_params(labelsize=14)
     cbar.set_label("mm",size=14)
