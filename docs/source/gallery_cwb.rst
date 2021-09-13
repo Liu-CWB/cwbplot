@@ -28,7 +28,7 @@ The projection setting of this graph is done by basemap, but strongely change to
         :width: 600
         :target: https://cwbplot.readthedocs.io/en/latest/example/rh_streamline_basemap.html
         
-        Rainfall
+        Relative humidity and streamline
     
     - .. figure:: image/_gallery/surftemp_basemap.png
         :width: 600 
@@ -36,14 +36,35 @@ The projection setting of this graph is done by basemap, but strongely change to
         
         Surface Temperature and Sea Level Pressure   
 
-   
 .. toctree::
     :maxdepth: 1
     :hidden:
     
     example/12accrain_basemap
-    example/surftemp_basemap
+    example/surftemp_basemap 
+
 
 
 Cartopy
 -----
+The projection setting of this graph is done by cartopy. 
+
+.. hlist::
+    :columns: 2
+
+    - .. figure:: image/_gallery/12acc_rainfall_cartopy.png
+        :width: 600
+        :target: https://cwbplot.readthedocs.io/en/latest/example/12accrain_cartopy.html
+        
+        Rainfall
+    
+    - .. figure:: image/_gallery/surftemp_basemap.png
+        :width: 600 
+        :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
+        
+        Surface Temperature and Sea Level Pressure
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    example/12accrain_cartopy
