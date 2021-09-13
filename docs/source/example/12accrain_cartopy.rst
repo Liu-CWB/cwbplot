@@ -43,10 +43,10 @@ Data source: CWB opendata website
     v10m = basicvar_84[67]["values"]
     
     
-    lambert = crs.LambertConformal(central_longitude = lon_0, central_latitude = lat_0, 
+    lambert = crs.LambertConformal(central_longitude = lon_0, central_latitude = lat_0, \
                                standard_parallels = (lat_1,lat_2))
 
-    coastline_shf = ShapelyFeature(shpreader.Reader("ne_10m_coastline.shp").geometries(), crs.PlateCarree(),
+    coastline_shf = ShapelyFeature(shpreader.Reader("ne_10m_coastline.shp").geometries(), crs.PlateCarree(), \
                                facecolor="none",edgecolor='sienna')
 
     fig = plt.figure(figsize=(16,12))
