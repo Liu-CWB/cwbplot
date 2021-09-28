@@ -30,9 +30,9 @@ The projection setting of this graph is done by basemap, but strongely change to
         
         Relative humidity and streamline
     
-    - .. figure:: image/_gallery/surftemp_basemap.png
+    - .. figure:: image/_gallery/tytrack_basemap.png
         :width: 600 
-        :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
+        :target: https://cwbplot.readthedocs.io/en/latest/example/tytrack_basemap.html
         
         Surface Temperature and Sea Level Pressure   
 
