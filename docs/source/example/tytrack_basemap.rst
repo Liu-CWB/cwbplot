@@ -77,7 +77,9 @@ Data source: CWB npd website
             bm.fillcontinents(color = "burlywood")
             bm.drawcoastlines(linewidth=0.6)
         draw(bm, path, init, axss[pics])
-    
+ 
+ 
+Track data as follows: 
 .. figure:: ../image/_gallery/trackdata.JPG
    :width: 400
    :align: center
