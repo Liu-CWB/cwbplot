@@ -34,7 +34,7 @@ The projection setting of this graph is done by basemap, but strongely change to
         :width: 600 
         :target: https://cwbplot.readthedocs.io/en/latest/example/tytrack_basemap.html
         
-        Surface Temperature and Sea Level Pressure   
+        Typhoon Track   
 
 .. toctree::
     :maxdepth: 1
