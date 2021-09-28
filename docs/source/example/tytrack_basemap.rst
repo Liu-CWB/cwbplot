@@ -10,7 +10,7 @@ Data source: CWB npd website
 ^^^^^
 
 .. figure:: ../image/_gallery/CHANSHU.png
-   :width: 400
+   :width: 600
    :align: center
 
 
@@ -78,3 +78,6 @@ Data source: CWB npd website
             bm.drawcoastlines(linewidth=0.6)
         draw(bm, path, init, axss[pics])
     
+.. figure:: ../image/_gallery/trackdata.JPG
+   :width: 400
+   :align: center
