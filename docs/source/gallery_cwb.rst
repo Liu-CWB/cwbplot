@@ -68,3 +68,20 @@ The projection setting of this graph is done by cartopy.
     :hidden:
 
     example/12accrain_cartopy
+
+
+Data Analysis 
+-----
+This section provieds some graphs for data analysis
+
+.. hlist::
+     :columns: 2
+     
+   - .. figure:: image/_gallery/Freq_example.png
+       :width: 600
+       
+       Frequency scatter plot by hist2d
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
