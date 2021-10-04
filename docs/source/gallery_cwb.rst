@@ -70,15 +70,16 @@ The projection setting of this graph is done by cartopy.
     example/12accrain_cartopy
 
 
+
 Data Analysis 
 -----
-This section provieds some graphs for data analysis
+This section provieds some graphs for data analysis.
 
 .. hlist::
      :columns: 2
      
    - .. figure:: image/_gallery/Freq_example.png
-       :width: 600
+       :width: 300
        :target: https://cwbplot.readthedocs.io/en/latest/example/freq_example.html
        
        Frequency scatter plot by hist2d
