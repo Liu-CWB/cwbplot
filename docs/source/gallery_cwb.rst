@@ -79,13 +79,11 @@ This section provieds some graphs for data analysis.
      :columns: 2
      
    - .. figure:: image/_gallery/Freq_example.png
-       :width: 300
        :target: https://cwbplot.readthedocs.io/en/latest/example/freq_example.html
        
        Frequency scatter plot by hist2d
     
    - .. figure:: image/_gallery/Freq_example.png
-       :width: 600
        :target: https://cwbplot.readthedocs.io/en/latest/example/freq_example.html
        
        Frequency scatter plot by hist2d
