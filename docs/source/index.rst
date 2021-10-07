@@ -12,6 +12,7 @@ Welcome to cwbplot's documentation!
    
    ./use_example
    ./gallery_cwb
+   ./sometips
 
 Whats new
 =========
