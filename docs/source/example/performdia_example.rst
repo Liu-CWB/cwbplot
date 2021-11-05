@@ -3,7 +3,7 @@ Performance digram
 
 ^^^^^
 
-.. figure:: ../image/_gallery/surftemp_basemap.png
+.. figure:: ../image/_gallery/perform_dig.png
    :width: 400
    :align: center
 
@@ -21,6 +21,6 @@ Performance digram
    labels = ["a","b","c","d"]
    perfombg = dia.perform_dig(fig)
    for i in range(4):
-       perfombg.scatter(xx[i],yy[i],color=colors[i],marker=mks[i],zorder=2,label=labels[i])
+       perfombg.scatter(xx[i],yy[i],color=colors[i],marker=mks[i],s=80,zorder=2,label=labels[i])
    plt.legend(ncol=4,loc='lower center',bbox_to_anchor=(0.5, -0.1))
    plt.show()
