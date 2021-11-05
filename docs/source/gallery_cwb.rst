@@ -87,7 +87,7 @@ This section provieds some graphs for data analysis.
     
     - .. figure:: image/_gallery/perform_dig.png
         :width: 600
-        :target: https://cwbplot.readthedocs.io/en/latest/example/perfomdia_example.html
+        :target: https://cwbplot.readthedocs.io/en/latest/example/performdia_example.html
        
         Performance digram
        
