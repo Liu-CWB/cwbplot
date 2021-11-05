@@ -85,14 +85,15 @@ This section provieds some graphs for data analysis.
        
         Frequency scatter plot by hist2d
     
-    - .. figure:: image/_gallery/Freq_example.png
+    - .. figure:: image/_gallery/perform_dig.png
         :width: 600
-        :target: https://cwbplot.readthedocs.io/en/latest/example/freq_example.html
+        :target: https://cwbplot.readthedocs.io/en/latest/example/perfomdia_example.html
        
-        Frequency scatter plot by hist2d
+        Performance digram
        
 .. toctree::
     :maxdepth: 1
     :hidden:
     
     example/freq_example
+    example/performdia_example
