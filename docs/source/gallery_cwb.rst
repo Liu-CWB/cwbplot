@@ -6,7 +6,7 @@ Basemap
 The projection setting of this graph is done by basemap, but strongely change to use cartopy. 
 
 .. hlist::
-    :columns: 2
+    :columns: 3
 
     - .. figure:: image/_gallery/12acc_rainfall_basemap.png
         :width: 600
@@ -20,9 +20,15 @@ The projection setting of this graph is done by basemap, but strongely change to
         
         Surface Temperature and Sea Level Pressure
         
+    - .. figure:: image/_gallery/two_colorbar.png
+        :width: 600 
+        :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
+        
+        Two colobar in a graph
+        
 
 .. hlist::
-    :columns: 2
+    :columns: 3
 
     - .. figure:: image/_gallery/rh_streamline_basemap.png
         :width: 600
