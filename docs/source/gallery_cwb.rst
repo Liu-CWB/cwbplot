@@ -41,12 +41,15 @@ The projection setting of this graph is done by basemap, but strongely change to
         :target: https://cwbplot.readthedocs.io/en/latest/example/tytrack_basemap.html
         
         Typhoon Track
-        
+
+.. hlist::
+    :columns: 2
     - .. figure: image/_gallery/Vertical_cross_section.png
         :width: 600
         :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
         
         Vertival cross section for grib2 data format
+
         
 
 .. toctree::
