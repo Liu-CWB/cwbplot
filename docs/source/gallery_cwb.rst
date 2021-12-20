@@ -31,7 +31,7 @@ The projection setting of this graph is done by basemap, but strongely change to
     :columns: 3
 
     - .. figure:: image/_gallery/rh_streamline_basemap.png
-        :width: 600
+        :width: 300
         :target: https://cwbplot.readthedocs.io/en/latest/example/rh_streamline_basemap.html
         
         Relative humidity and streamline
@@ -42,7 +42,7 @@ The projection setting of this graph is done by basemap, but strongely change to
         
         Typhoon Track
         
-    - .. figure: image/_gallery/vertical_cross_section.png
+    - .. figure: image/_gallery/Vertical_cross_section.png
         :width: 600
         :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
         
