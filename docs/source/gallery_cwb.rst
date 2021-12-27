@@ -94,7 +94,7 @@ Data Analysis
 This section provieds some graphs for data analysis.
 
 .. hlist::
-    :columns: 2
+    :columns: 3
      
     - .. figure:: image/_gallery/Freq_example.png
         :width: 600
@@ -107,6 +107,13 @@ This section provieds some graphs for data analysis.
         :target: https://cwbplot.readthedocs.io/en/latest/example/performdia_example.html
        
         Performance digram
+        
+    - .. figure:: image/_gallery/T2_rmse_nearestgrid.png
+        :width: 600
+        :target: https://cwbplot.readthedocs.io/en/latest/example/performdia_example.html
+       
+        Surface temperature dia with different elevation deficit 
+    
        
 .. toctree::
     :maxdepth: 1
