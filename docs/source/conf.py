@@ -29,7 +29,7 @@ release = '0.1.0'
 
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'material'
+pygments_style = 'rainbow_dash'
 
 
 # Add any Sphinx extension module names here, as strings. They can be
