@@ -3,8 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to cwbplot's documentation!
+**Welcome to cwbplot's documentation!**
 ===================================
+**About**
+
+Several python useful tools for meteorology data visualization and data processing are supplied in this project.
+We call this project "Meteorology tools knowldge base".
+Moreover, it may become a good reference for anyone who want to do meteorology related work.
 
 .. toctree::
    :maxdepth: 2
