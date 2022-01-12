@@ -1,6 +1,12 @@
 
 
 /* CWB RFS header color */
-.bg-unidata {
-    background-color: #187AC8;
+/.bg-unidata {
+/    background-color: #187AC8;
+/}
+
+
+.navbar-light {
+    background: #63ffff!important;
+    box-shadow: inset 0px 0px 0.2rem 0px #0f00ff;
 }
