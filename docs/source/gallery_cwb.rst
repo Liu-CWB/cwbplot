@@ -22,9 +22,9 @@ The projection setting of this graph is done by basemap, but strongely change to
         
     - .. figure:: image/_gallery/two_colorbar.png
         :width: 600 
-        :target: https://cwbplot.readthedocs.io/en/latest/example/surftemp_basemap.html
+        :target: https://cwbplot.readthedocs.io/en/latest/example/twoclorbar_basemap.html
         
-        Two colobar in a graph
+        Two colobar in a Figure
         
 
 .. hlist::

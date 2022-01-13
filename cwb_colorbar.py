@@ -81,4 +81,48 @@ def surfT(colorlevel = list(range(-1,40)),style='cwbweb'):
     return dictobj
 
 
-#def freq()
+def rh(colorlevel=[60,65,70,75,80,85,90,95,100],style="npd"):
+    if style.lower() == "npd":
+        cwb_data = ["None", "#D3E6EB", "#A7CFD8","#82F550","#4ADC0C","#93F4FF","#2DEAFF","#02D4E3"]
+        cmaps = mcolors.ListedColormap(cwb_data,'rh')
+        numticks = len(cwb_data) +1
+        if len(colorlevel) != numticks:
+            print("the length of colorlevel (len(colorlevel)) need {:d}.".format(numticks))
+            print("Now use default set [60,65,70,75,80,85,90,95,100]")
+            colorlevel = [60,65,70,75,80,85,90,95,100]
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+        else:
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+    if style.lower() == "rhcc":
+        cwb_data = ["None", "#DAD892", "#A0E3B7", "#21F0B6", "#7ED4D8" , "#4BD6FD", "#2C928B", "#25738B" ]
+        cmaps = mcolors.ListedColormap(cwb_data,'rh')
+        numticks = len(cwb_data) +1
+        if len(colorlevel) != numticks:
+            print("the length of colorlevel (len(colorlevel)) need {:d}.".format(numticks))
+            print("Now use default set [60,65,70,75,80,85,90,95,100]")
+            colorlevel = [60,65,70,75,80,85,90,95,100]
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+        else:
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+    dictobj = {"norm":norms,"cmap":cmaps,"levels":colorlevel}
+    return dictobj
+
+def freq(colorlevel = [1, 2, 5, 8, 15, 20, 25, 30, 35, 40, 100, 300, 500], plttype="hist2d", style="ccliu"):
+    #Some color is took from imola colormap in the proplot package.
+    defclevel = "[1, 2, 5, 8, 15, 20, 25, 30, 35, 40, 100, 300, 500]"
+    if style.lower() == "ccliu":
+        cwb_data = ['#2446a9', '#2d59a0', '#396b94', '#497b85', '#60927b', '#7bae74', '#99cc6d', '#c4ea67', '#ffff66', '#FFCB00', '#FF9A00', 'orangered']
+        cmaps = mcolors.ListedColormap(cwb_data,'freq')
+        numticks = len(cwb_data) + 1
+        if len(colorlevel) != numticks:
+            print("the length of colorlevel (len(colorlevel)) need {:d}.".format(numticks))
+            print("Now use default set {}".format(defclevel))
+            colorlevel = [1, 2, 5, 8, 15, 20, 25, 30, 35, 40, 100, 300, 500]
+            norms = mcolors.BoundaryNorm(colorlevel,cmaps.N)
+        else:
+            norms = mcolors.BoundaryNorm(colorlevel,cmaps.N)
+    if plttype == "hist2d":
+        dictobj = {"norm":norms,"cmap":cmaps}
+    else:
+        dictobj = {"norm":norms,"cmap":cmaps,"levels":colorlevel}
+    return dictobj
