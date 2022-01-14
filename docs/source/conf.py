@@ -77,7 +77,6 @@ html_theme_options = {
 
    ],
    
-    "navbar_end": ["version-switcher", "navbar-icon-links"],
     "switcher": {
         # "json_url": "/_static/switcher.json",
         "json_url": "https://cwbplot.readthedocs.io/en/dev/_static/switcher.json",
@@ -85,13 +84,6 @@ html_theme_options = {
         #"version_match": version,
     },
 }
-
-
-
-
-
-
-
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
