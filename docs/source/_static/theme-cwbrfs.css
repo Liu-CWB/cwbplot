@@ -23,6 +23,11 @@
 }
 
 
+.navbar-light .navbar-nav li a.nav-link:hover {
+    color: rgb(255, 162, 105);
+}
+
+
 .navbar-nav>.active>.nav-link {
     color: rgb(232 113 33) !important;
     font-weight: 500 !important;

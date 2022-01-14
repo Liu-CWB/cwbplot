@@ -24,6 +24,8 @@ author = 'CCLiu'
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
 
+#release = pydata_sphinx_theme.__version__
+#version = release.replace("dev0", "")
 
 # -- General configuration ---------------------------------------------------
 
@@ -72,7 +74,16 @@ html_theme_options = {
             # Whether icon should be a FontAwesome class, or a local file
             "type": "fontawesome",  # Default is fontawesome
         }
+
    ]
+   
+    "navbar_end": ["version-switcher", "navbar-icon-links"],
+    "switcher": {
+        # "json_url": "/_static/switcher.json",
+        "json_url": "https://cwbplot.readthedocs.io/en/dev/_static/switcher.json",
+        #"url_template": "https://cwbplot.readthedocs.io/en/v{version}/",
+        #"version_match": version,
+    },
 }
 
 
