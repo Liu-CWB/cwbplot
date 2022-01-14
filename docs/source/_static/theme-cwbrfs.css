@@ -11,4 +11,21 @@
     box-shadow: inset 0px 0px 0.2rem 0px #0f00ff;
 }
 
+/* Override the default color set in the original theme */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+.navbar-nav>.active>.nav-link {
+    color: rgb(232 113 33) !important;
+    font-weight: 400 !important;
+    font-style: bold;
+}
+
+.fa-github-square:before {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-weight: 400 !important;
+}
+
 
