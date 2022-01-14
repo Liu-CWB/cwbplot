@@ -12,16 +12,22 @@
 }
 
 /* Override the default color set in the original theme */
-.navbar-dark .navbar-nav .nav-link {
+/*.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}*/
+
+
+.navbar-light .navbar-nav li a.nav-link {
+    padding: 0 1.2rem;
     color: #fff;
 }
 
 
 .navbar-nav>.active>.nav-link {
     color: rgb(232 113 33) !important;
-    font-weight: 400 !important;
-    font-style: bold;
+    font-weight: 500 !important;
 }
+
 
 .fa-github-square:before {
     color: rgba(255, 255, 255, 0.5) !important;
