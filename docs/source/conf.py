@@ -75,7 +75,7 @@ html_theme_options = {
             "type": "fontawesome",  # Default is fontawesome
         }
 
-   ]
+   ],
    
     "navbar_end": ["version-switcher", "navbar-icon-links"],
     "switcher": {
