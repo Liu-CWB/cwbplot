@@ -13,7 +13,8 @@
 import os
 import sys
 import sphinx_rtd_theme
-import pydata_sphinx_theme 
+import pydata_sphinx_theme
+import nbsphinx
 sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -37,7 +38,7 @@ pygments_style = 'rainbow_dash'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ 'sphinx.ext.autosectionlabel']
+extensions = [ 'sphinx.ext.autosectionlabel', 'nbsphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
