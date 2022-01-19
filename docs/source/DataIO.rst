@@ -14,6 +14,7 @@ GRIB(pygrib, xarray)
 
 netCDF(netCDF4, xarray)
 -----------------------
+`netCDF4 example https://cwbplot.readthedocs.io/en/dev/example/netCDF4.html`_
 
 
 HDF(netCDF4, hdf5, pyhdf)
