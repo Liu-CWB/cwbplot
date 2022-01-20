@@ -86,6 +86,19 @@ html_theme_options = {
     },
 }
 
+html_sidebars = {
+    "index": [
+        #'search-field.html',
+        # 'sidebar_announcement.html',
+        #"sidebar_versions.html",
+        #"cheatsheet_sidebar.html",
+        #"donate_sidebar.html",
+        "cwboffweb.html",
+    ],
+    # '**': ['localtoc.html', 'pagesource.html']
+}
+
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
