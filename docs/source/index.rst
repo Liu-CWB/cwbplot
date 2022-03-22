@@ -19,6 +19,7 @@ Moreover, it may become a important reference for anyone who want to do meteorol
    ./DataIO.rst
    ./gallery_cwb
    ./sometips
+   ./4NCAR
 
 Whats new
 =========
