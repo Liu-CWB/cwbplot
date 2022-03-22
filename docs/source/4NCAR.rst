@@ -10,5 +10,6 @@ TBD
 The demonstration of data application
 ---------------------------------------
 The author of this demo file is Y.J., Wu. 
-`Demo <https://cwbplot.readthedocs.io/en/dev/example/For_NCAR_demonstration.ipynb>`_
+
+** `Demostration <https://cwbplot.readthedocs.io/en/dev/example/For_NCAR_demonstration.html>`_ **
 
