@@ -9,7 +9,7 @@ TBD
 
 The demonstration of data application
 ---------------------------------------
-The author of this demo file is Y.J., Wu. 
+Demo file author: Y.J., Wu. 
 
 ** `Demonstration <https://cwbplot.readthedocs.io/en/dev/example/For_NCAR_demonstration.html>`_ **
 
