@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cwbplot
+Version: 0.0.1
+Summary: Central weather bureau rfs team useful tool for daily wrok.
+Home-page: https://github.com/Liu-CWB/cwbplot
+Author: cwbrfsteam
+Author-email: ccliu
+License: MIT
+Project-URL: Source, https://github.com/Liu-CWB/cwbplot
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# First try install
