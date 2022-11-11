@@ -127,7 +127,7 @@ def read_xml(fn,tiff_fn=False):
               ]
         packvalue = []
         for qq in roots.iter("{urn:cwb:gov:tw:cwbcommon:0.1}location"):
-            ch, eachvalue = onestn(qq, loc_element_A0001_001)
+            ch, eachvalue = onestn(qq, loc_element)
             packvalue.append(eachvalue)
         xml2df = pd.DataFrame(packvalue,columns=ch)
         dfORarr = xml2df       
@@ -215,3 +215,4 @@ def json_api(fn,apipath):
        outfn = O_A0002_001.apiget(apipath)
     elif fn == "O-A0003-001":
        outfn = O_A0003_001.apiget(apipath)
+    return outfn
