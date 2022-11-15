@@ -65,6 +65,6 @@ Data Source: CWB opendata
 
 圖如下
 
-.. figure:: ../image/_gallery/A-0001-001.jpeg
-   :width: 400
+.. figure:: ../image/_gallery/O-A0001-001.jpeg
+   :width: 600
    :align: center

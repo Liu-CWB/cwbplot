@@ -60,14 +60,15 @@ Data Source: CWB opendata
                   urcrnrlon=122.5, urcrnrlat=26)
    m.drawcoastlines()
    raincb = cwb_colorbar.rain()
-   m.scatter(norain_lon, norain_lat, marker="x", latlon = True)
+   m.scatter(norain_lon, norain_lat, marker="x", latlon = True, label="Rainfall small than 0.1" )
    sct = m.scatter(lon, lat, c=rain, cmap = raincb["cmap"], norm=raincb["norm"], latlon=True)
    cbar = plt.colorbar(sct)
-   cbar.set_label("Raifall",size=14)
+   cbar.set_label("Rainfall",size=14)
    plt.title("Last 3 days rainfall " + obstime[0],fontsize=18)
+   plt.legend(loc="upper left",fontsize=14)
+   plt.savefig("O-A0002-001.png", format='png', bbox_inches='tight', dpi=250)
 
 圖如下
 
-.. figure:: ../image/_gallery/A-0001-001.jpeg
-   :width: 400
+.. figure:: ../image/_gallery/A-0002-001.png
    :align: center
