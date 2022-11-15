@@ -38,7 +38,7 @@ Open data items
 --------------------
 
 .. list-table:: 
-   :widths:  32 16 12
+   :widths:  28 16 12
    :header-rows: 1
 
    * - 資料名稱
