@@ -42,10 +42,10 @@ Data Source: CWB opendata
 .. code-block:: python
    
    import matplotlib.pyplot as plt
-   from cwbplot import cwb_colorbar, opdata
+   from cwbplot import cwb_colorbar, opdata, projinfo
    from mpl_toolkits.basemap import Basemap
 
-   df = opdata.json_api("O-A0001-001","/home/staffid/cwbopendata/readme.api")
+   df = opdata.json_api("O-A0001-001","/home/c052/work/opendata/apitest/readme.api")
    lat = df["lat"].astype(float).values
    lon = df["lon"].astype(float).values
    tempature = df["TEMP"].astype(float).values

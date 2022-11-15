@@ -1,4 +1,4 @@
-此範例處理自動氣象站-氣象觀測資料 O-A0001-001
+此範例處理自動雨量站-雨量觀測資料 O-A0002-001
 ----------------
 
 
@@ -12,10 +12,10 @@ Data Source: CWB opendata
    
    from cwbplot import opdata
    
-   dfxml = opdata.read_xml("O-A0001-001.xml")
+   dfxml = opdata.read_xml("O-A0002-001.xml")
    #會回傳pandas dataframe物件
 
-   dfjson = opdata.read_json("O-A0001-001.json")
+   dfjson = opdata.read_json("O-A0002-001.json")
    #會回傳pandas dataframe物件
 
    print(list(dfjson))
@@ -28,7 +28,7 @@ Data Source: CWB opendata
 .. code-block:: python
 
    from cwbplot import opdata
-   dfjson = opdata.json_api("O-A0001-001","/home/staffid/cwbopdata/readme.api")
+   dfjson = opdata.json_api("O-A0002-001","/home/staffid/cwbopdata/readme.api")
    #會回傳pandas dataframe物件
    #readme.api的內容為您於氣象局開放資料申請的api，我的類似CWB-????????-????-????-????-????????????
    #?代表一個位數，可能是數字或英文字母
@@ -45,23 +45,26 @@ Data Source: CWB opendata
    from cwbplot import cwb_colorbar, opdata
    from mpl_toolkits.basemap import Basemap
 
-   df = opdata.json_api("O-A0001-001","/home/staffid/cwbopendata/readme.api")
+   df = opdata.json_api("O-A0002-001","/home/staffid/cwbopendata/readme.api")
    lat = df["lat"].astype(float).values
    lon = df["lon"].astype(float).values
-   tempature = df["TEMP"].astype(float).values
+   rain = df["latest_3days"].astype(float).values
    obstime = df["time"]
-
-   surfT = cwb_colorbar.surfT()
+   norian = df[df["latest_3days"].astype(float) < 0.1]
+   norain_lat = norian["lat"].astype(float).values
+   norain_lon = norian["lon"].astype(float).values
 
    plt.figure(figsize=(16,12))
    m = Basemap(projection='merc',resolution="f",
                   llcrnrlon=117.5, llcrnrlat=21.5,
                   urcrnrlon=122.5, urcrnrlat=26)
    m.drawcoastlines()
-   sct = m.scatter(lon, lat, c=tempature, cmap = surfT["cmap"], norm=surfT["norm"], latlon=True)
+   raincb = cwb_colorbar.rain()
+   m.scatter(norain_lon, norain_lat, marker="x", latlon = True)
+   sct = m.scatter(lon, lat, c=rain, cmap = raincb["cmap"], norm=raincb["norm"], latlon=True)
    cbar = plt.colorbar(sct)
-   cbar.set_label("Temperature ($^\circ$C)",size=14)
-   plt.title(obstime[0],fontsize=18)
+   cbar.set_label("Raifall",size=14)
+   plt.title("Last 3 days rainfall " + obstime[0],fontsize=18)
 
 圖如下
 
