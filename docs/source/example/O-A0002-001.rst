@@ -70,5 +70,5 @@ Data Source: CWB opendata
 
 圖如下
 
-.. figure:: ../image/_gallery/A-0002-001.png
+.. figure:: ../image/_gallery/O-A0002-001.png
    :align: center

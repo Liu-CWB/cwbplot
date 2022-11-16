@@ -50,3 +50,6 @@ Open data items
    * - 自動氣象站-雨量觀測資料
      - O-A0002-001
      - `Link <https://cwbplot.readthedocs.io/en/dev/example/O-A0002-001.html>`_
+   * - 自動氣象站-雨量觀測資料
+     - O-A0003-001
+     - `Link <https://cwbplot.readthedocs.io/en/dev/example/O-A0003-001.html>`_
