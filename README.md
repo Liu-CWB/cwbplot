@@ -1,1 +1,1 @@
-# First try install
+# cwbplot: Useful tools for weather data
