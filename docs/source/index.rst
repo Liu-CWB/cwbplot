@@ -20,7 +20,7 @@ Moreover, it may become a important reference for anyone who want to do meteorol
    ./DataIO.rst
    ./gallery_cwb
    ./sometips
-   ./reference
+   ./reference/index
 
 Whats new
 =========
