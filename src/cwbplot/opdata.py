@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import numpy as np
 import json
+import pygrib as pb
 import matplotlib.pyplot as plt
 from osgeo import gdal
 from datetime import datetime
@@ -222,4 +223,8 @@ def json_api(fn,apipath):
        outfn = O_A0002_001.apiget(apipath)
     elif fn == "O-A0003-001":
        outfn = O_A0003_001.apiget(apipath)
+    return outfn
+
+def read_grib(fn):
+    outfn = pb.open(fn)
     return outfn
