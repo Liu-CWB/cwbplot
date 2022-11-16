@@ -12,7 +12,7 @@ setup(
     version = "0.0.1",
     author = "cwbrfsteam",
     author_email = "ccliu",
-    description = "Central weather bureau rfs team useful tool for daily wrok.",
+    description = "Central weather bureau rfs team and open data useful tool for daily wrok.",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     license = "MIT",
@@ -25,9 +25,14 @@ setup(
     },
     #packages=find_packages(exclude=["tests*"]),
     python_requires=">=3",
-    #install_requires=[
-    #    "boto3>=1.24.28"
-    #],
+    install_requires=[
+        "basemap>=1.2.1",
+        "pygrib>=2.0.4",
+        "pandas>=1.0.3",
+        "numpy>=1.17.3",
+        "matplotlib>=3.3.3",
+        "gdal>=2.4.1"
+    ],
     # setup_requires=[
     #     "feedparser>=5.1.3",
     # ],
