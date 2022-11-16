@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from osgeo import gdal
 from datetime import datetime
 from cwbplot.json import *
+from cwbplot.obsvis import *
 from cwbplot import cwb_colorbar
 from mpl_toolkits.basemap import Basemap
 
@@ -114,7 +115,7 @@ def read_xml(fn,tiff_fn=False):
     roots = trees.getroot()
     ids = next(roots.iter("{urn:cwb:gov:tw:cwbcommon:0.1}dataid")).text
     maincat, subcat = judecat(ids)
-    if maincat == "A0001":
+    if maincat == "A0001" or maincat=="A0002" or maincat == "A0003":
         loc_element = ['{urn:cwb:gov:tw:cwbcommon:0.1}time',
                '{urn:cwb:gov:tw:cwbcommon:0.1}stationId',
                '{urn:cwb:gov:tw:cwbcommon:0.1}locationName',
@@ -152,7 +153,7 @@ def read_json(fn):
         fn = json.load(jj)
     ids = fn["cwbopendata"]["dataid"]
     maincat, subcat = judecat(ids)
-    if maincat == "A0001":
+    if maincat == "A0001" or maincat == "A0002" or maincat =="A0003":
         collout = []
         for stn in range(len(fn["cwbopendata"]["location"])):
             dicts =  fn["cwbopendata"]["location"][0].keys()
@@ -186,11 +187,14 @@ def read_json(fn):
         dfORarr = radararr
     return dfORarr
 
-def draw(fn,types):
-    with open(fn,"r",encoding='utf-8') as jj:
-        fn = json.load(jj)
-    ids = fn["cwbopendata"]["dataid"]
-    maincat, subcat = judecat(ids)
+def draw(fn=False,types=False, apipath=False, cut=False, metvars=False):
+    if fn and not apipath:
+        with open(fn,"r",encoding='utf-8') as jj:
+            fn = json.load(jj)
+        ids = fn["cwbopendata"]["dataid"]
+        maincat, subcat = judecat(ids)
+    else:
+        maincat = False
     if maincat == "A0059":
         fig = plt.figure()
         radar, lon, lat, obstime = radarcomp(fn, catgo="json")
@@ -206,6 +210,9 @@ def draw(fn,types):
             sct = projs.contourf(lon, lat,radar, cmap = radarcm["cmap"], norm=radarcm["norm"], levels = radarcm["levels"],latlon=True)
         plt.colorbar(sct)
         plt.title(obstime,fontsize=18)
+    if maincat == "A0001" or fn == "O-A0001-001":
+        outfn = O_A0001_001.apiget(apipath)
+        fig, projs = O_A0001_001_vis.O_A0001_VIS(outfn, metvars)
     return fig, projs
 
 def json_api(fn,apipath):
