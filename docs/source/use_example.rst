@@ -1,7 +1,61 @@
-How to use
+Getting started
 =====
 
-colorbar
+Installation
+-------------
+
+ >>> pip install cwbplot
+
+
+Required Dependencies
+^^^^^^^^^^^^^^^^^^^^^^
+
+    - Python 3.6 or later
+    - numpy (1.17.3 or later)
+    - pygrib (2.0.4 or later)
+    - basemap (1.2.1 or later)
+    - requests (2.25.0 or later)
+    - matplotlib (3.3.3 or later)
+    - setuptools (38.0 or later) 
+
+
+Highly Recommended Packages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    - gdal (2.4.1 or later)
+    
+
+Plotting Packages
+^^^^^^^^^^^^^^^^^^
+
+    - cartopy (0.13 or later)
+
+
+
+CWB open data IO
+-------------------
+
+example
+^^^^^^^^^
+
+json file
+
+.. code-block:: python
+   
+   from cwbplot import opdata
+   out = opdata.read_xml("jsonfile")
+
+api(Only Json)
+
+.. code-block:: python
+   
+   from cwbplot import opdata
+   out = opdata.json_api("opend dataid","apipath")
+
+
+
+
+Colorbar
 -----
 
 

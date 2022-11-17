@@ -4,7 +4,6 @@ import numpy as np
 import json
 import pygrib as pb
 import matplotlib.pyplot as plt
-from osgeo import gdal
 from datetime import datetime
 from cwbplot.json import *
 from cwbplot.obsvis import *
@@ -14,7 +13,7 @@ from mpl_toolkits.basemap import Basemap
 try:
     from osgeo import gdal
 except:
-    print("Gdal package can't be imported")
+    print("Gdal package can't be imported, which probably not be installed")
     print("Function for read geotiff data can't be used")
 
 

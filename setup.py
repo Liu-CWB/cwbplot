@@ -9,7 +9,7 @@ def read(fname):
         return fin.read()
 setup(
     name = "cwbplot",
-    version = "0.0.3",
+    version = "0.0.4",
     author = "cwbrfsteam",
     author_email = "littlepon4@hotmail.com",
     description = "Central weather bureau rfs team and open data useful tool for daily wrok.",
@@ -31,11 +31,11 @@ setup(
         "pandas>=1.0.3",
         "numpy>=1.17.3",
         "matplotlib>=3.3.3",
-        "requests>=2.12.5"
+        "requests>=2.25.0"
     ],
     extras_require={
                  'geotiff':['gdal>=2.4.1']
-                   }
+                   },
     # setup_requires=[
     #     "feedparser>=5.1.3",
     # ],
