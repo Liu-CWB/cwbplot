@@ -11,6 +11,14 @@ from cwbplot.obsvis import *
 from cwbplot import cwb_colorbar
 from mpl_toolkits.basemap import Basemap
 
+try:
+    from osgeo import gdal
+except:
+    print("Gdal package can't be imported")
+    print("Function for read geotiff data can't be used")
+
+
+
 def judecat(idname):
     if "_" in idname:
         splitidx = idname.split("_")

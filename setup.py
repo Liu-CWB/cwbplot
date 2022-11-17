@@ -9,9 +9,9 @@ def read(fname):
         return fin.read()
 setup(
     name = "cwbplot",
-    version = "0.0.1",
+    version = "0.0.3",
     author = "cwbrfsteam",
-    author_email = "ccliu",
+    author_email = "littlepon4@hotmail.com",
     description = "Central weather bureau rfs team and open data useful tool for daily wrok.",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
@@ -24,15 +24,18 @@ setup(
         # 'Tracker': 'https://github.com/pypa/sampleproject/issues',
     },
     #packages=find_packages(exclude=["tests*"]),
-    python_requires=">=3",
+    python_requires=">=3.6",
     install_requires=[
         "basemap>=1.2.1",
         "pygrib>=2.0.4",
         "pandas>=1.0.3",
         "numpy>=1.17.3",
         "matplotlib>=3.3.3",
-        "gdal>=2.4.1"
+        "requests>=2.12.5"
     ],
+    extras_require={
+                 'geotiff':['gdal>=2.4.1']
+                   }
     # setup_requires=[
     #     "feedparser>=5.1.3",
     # ],
