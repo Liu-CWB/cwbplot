@@ -103,7 +103,7 @@ def wrfd(lon, lat,  domain, projection= 'lcc', res="l", cut = False, center =Fal
                     urcrnrlon = cut[1], ax= ax)
         elif isinstance(center,tuple) and isinstance(center,list):
             print("Object center must tuple or list and length must 2")
-    elif cut and projeciotn == "cyl":
+    elif cut and projection == "cyl":
         if isinstance(cut,tuple) and isinstance(cut,list):
             print("Object cut type must tuple or list")
     
@@ -164,7 +164,7 @@ def rwrf(lon, lat,  domain="d01", projection= 'lcc', res="l", cut = False, cente
                     urcrnrlon = cut[1])
         elif isinstance(center,tuple) and isinstance(center,list):
             print("Object center must tuple or list and length must 2")
-    elif cut and projeciotn == "cyl":
+    elif cut and projection == "cyl":
         if isinstance(cut,tuple) and isinstance(cut,list):
             print("Object cut type must tuple or list")
     return wrfproj

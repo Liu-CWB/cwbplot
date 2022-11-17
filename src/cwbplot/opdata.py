@@ -230,6 +230,8 @@ def json_api(fn,apipath):
        outfn = O_A0002_001.apiget(apipath)
     elif fn == "O-A0003-001":
        outfn = O_A0003_001.apiget(apipath)
+    elif fn == "O-B0045-001":
+       outfn = O_B0045_001.apiget(apipath)
     return outfn
 
 def read_grib(fn):

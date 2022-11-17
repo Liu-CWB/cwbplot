@@ -60,6 +60,10 @@ Open data items
    * - 局屬氣象站-現在天氣觀測報告
      - O-A0003-001
      - `Link <https://cwbplot.readthedocs.io/en/dev/example/O-A0003-001.html>`_
+   * - 降雨估計資料-QPESUMS過去1小時定量降雨估計格點資料
+     - O-B0045-001
+     - `Link <https://cwbplot.readthedocs.io/en/dev/example/O-B0045-001.html>`_
    * - 數值預報模式-區域預報模式(WRF-3公里)
      - M-A0064-???
      - `Link <https://cwbplot.readthedocs.io/en/dev/example/M-A0064.html>`_
+
