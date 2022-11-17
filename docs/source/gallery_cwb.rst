@@ -88,6 +88,35 @@ The projection setting of this graph is done by cartopy.
     example/12accrain_cartopy
 
 
+Projinfo
+------------
+This section provieds some graphs for how to ues projinfo
+
+important: projinfo is based on Basemap
+
+.. hlist::
+    :columns: 2
+
+    - .. figure:: image/_gallery/O-B0045-001.png
+        :width: 600
+        :target: https://cwbplot.readthedocs.io/en/dev/example/O-B0045-001.html
+
+        1 hour QPE
+
+    - .. figure:: image/_gallery/M-A0064.png
+        :width: 600
+        :target: https://cwbplot.readthedocs.io/en/dev/example/M-A0064.html
+
+        Surface Temperature and surface relative humidity
+
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    example/O-B0045-001
+    example/M-A0064
+
+
 
 Data Analysis 
 -----
