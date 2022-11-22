@@ -16,6 +16,6 @@ This package includes
  * 氣象局開放資料(https://opendata.cwb.gov.tw/index) 讀取及視覺化
  * 其它
 
-Documentation: https://cwbplot.readthedocs.io/en/dev/index.html
+Documentation: https://cwbplot.readthedocs.io/en/latest/index.html
 
-參考文件: https://cwbplot.readthedocs.io/en/dev/index.html
+參考文件: https://cwbplot.readthedocs.io/en/latest/index.html
