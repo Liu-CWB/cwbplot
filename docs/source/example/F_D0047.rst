@@ -97,5 +97,5 @@ Data Source: CWB opendata
    :align: center
 
 
-.. figure:: ../image/_gallery/F-D0047-011.jpeg
+.. figure:: ../image/_gallery/F-D0047-011.png
    :align: center

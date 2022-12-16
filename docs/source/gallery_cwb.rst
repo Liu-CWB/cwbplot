@@ -81,7 +81,7 @@ Cartopy is used for the projection setting of these graphs.
         
         Surface Temperature and Sea Level Pressure
     
-    - .. figure:: image/_gallery/F-D0047-011.jpeg
+    - .. figure:: image/_gallery/F-D0047-011.png
         :width: 600
         :target: https://cwbplot.readthedocs.io/en/dev/example/F_D0047.html
 
