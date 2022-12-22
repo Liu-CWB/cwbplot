@@ -1,10 +1,55 @@
 import matplotlib.colors as mcolors
 
+def lightrain(tranp=0.5):
+    rain_light_temp = [[1.        , 1.        , 1.        , 0.5       ],
+       [0.77647059, 0.77254902, 0.76470588, 0.5       ],
+       [0.60784314, 1.        , 1.        , 0.5       ],
+       [0.        , 0.81176471, 1.        , 0.5       ],
+       [0.00392157, 0.59607843, 1.        , 0.5       ],
+       [0.00392157, 0.39607843, 1.        , 0.5       ],
+       [0.18823529, 0.6       , 0.00392157, 0.5       ],
+       [0.19607843, 1.        , 0.        , 0.5       ],
+       [0.97254902, 1.        , 0.        , 0.5       ],
+       [1.        , 0.79607843, 0.        , 0.5       ],
+       [1.        , 0.60392157, 0.        , 0.5       ],
+       [0.98039216, 0.01176471, 0.        , 0.5       ],
+       [0.8       , 0.        , 0.01176471, 0.5       ],
+       [0.62745098, 0.        , 0.        , 0.5       ],
+       [0.59607843, 0.        , 0.60392157, 0.5       ],
+       [0.76470588, 0.01568627, 0.8       , 0.5       ],
+       [0.97254902, 0.01960784, 0.95294118, 0.5       ],
+       [0.99607843, 0.79607843, 1.        , 0.5       ]]
+    rain_light = rain_light_temp.copy()
+    for rgbspos in rain_light:
+        rgbspos[3] = tranp
+    return rain_light
 
 def rain(colorlevel = [0,0.1,1,2,6,10,15,20,30,40,50,70,90,110,130,150,200,300,400], style = 'nwprfs'):
     if style == "nwprfs":
         cwb_data=['None','#C6C5C3','#9BFFFF','#00CFFF','#0198FF','#0165FF','#309901','#32FF00','#F8FF00','#FFCB00',\
                '#FF9A00','#FA0300','#CC0003', '#A00000','#98009A','#C304CC','#F805F3','#FECBFF']
+        cmaps = mcolors.ListedColormap(cwb_data,'precipitation')
+        numticks = len(cwb_data) +1
+        if len(colorlevel) != numticks:
+            print("the length of colorlevel (len(colorlevel)) need {:d}.".format(numticks))
+            print("Now use default set [0,0.1,1,2,6,10,15,20,30,40,50,70,90,110,130,150,200,300,400]")
+            colorlevel = [0,0.1,1,2,6,10,15,20,30,40,50,70,90,110,130,150,200,300,400]
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+        else:
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+    elif style == "nwprfs_light1":
+        cwb_data = lightrain(tranp=0.5)
+        cmaps = mcolors.ListedColormap(cwb_data,'precipitation')
+        numticks = len(cwb_data) +1
+        if len(colorlevel) != numticks:
+            print("the length of colorlevel (len(colorlevel)) need {:d}.".format(numticks))
+            print("Now use default set [0,0.1,1,2,6,10,15,20,30,40,50,70,90,110,130,150,200,300,400]")
+            colorlevel = [0,0.1,1,2,6,10,15,20,30,40,50,70,90,110,130,150,200,300,400]
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+        else:
+            norms = mcolors.BoundaryNorm(colorlevel, cmaps.N)
+    elif style == "nwprfs_light2":
+        cwb_data = lightrain(tranp=0.3)
         cmaps = mcolors.ListedColormap(cwb_data,'precipitation')
         numticks = len(cwb_data) +1
         if len(colorlevel) != numticks:
