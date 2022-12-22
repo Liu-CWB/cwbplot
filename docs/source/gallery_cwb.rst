@@ -87,6 +87,14 @@ Cartopy is used for the projection setting of these graphs.
 
         最低體感溫度
 
+.. hlist::
+   :columns: 3
+   
+   - .. figure:: image/_gallery/O_B0055_001.png
+       :width: 600
+     
+       衛星圖(觀測,模式預報)
+
     
 .. toctree::
     :maxdepth: 1
