@@ -3,7 +3,7 @@ Gallery
 
 Basemap
 -----
-The projection setting of this graph is done by basemap, but strongely change to use cartopy. 
+Basemap is used for projection setting of these graphs
 
 .. hlist::
     :columns: 3
@@ -64,10 +64,10 @@ The projection setting of this graph is done by basemap, but strongely change to
 
 Cartopy
 -----
-The projection setting of this graph is done by cartopy. 
+Cartopy is used for the projection setting of these graphs. 
 
 .. hlist::
-    :columns: 2
+    :columns: 3
 
     - .. figure:: image/_gallery/12acc_rainfall_cartopy.png
         :width: 600
@@ -80,12 +80,29 @@ The projection setting of this graph is done by cartopy.
         :target: https://cwbplot.readthedocs.io/en/dev/example/surftemp_basemap.html
         
         Surface Temperature and Sea Level Pressure
-        
+    
+    - .. figure:: image/_gallery/F-D0047-011.png
+        :width: 600
+        :target: https://cwbplot.readthedocs.io/en/dev/example/F_D0047.html
+
+        最低體感溫度
+
+.. hlist::
+   :columns: 3
+   
+   - .. figure:: image/_gallery/O_B0055_001.png
+       :width: 600
+     
+       衛星圖(觀測,模式預報)
+
+    
 .. toctree::
     :maxdepth: 1
     :hidden:
 
     example/12accrain_cartopy
+    example/surftemp_basemap
+    example/F_D0047
 
 
 Projinfo

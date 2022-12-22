@@ -66,4 +66,6 @@ Open data items
    * - 數值預報模式-區域預報模式(WRF-3公里)
      - M-A0064-???
      - `Link <https://cwbplot.readthedocs.io/en/dev/example/M-A0064.html>`_
-
+   * - 鄉鎮天氣預報(目前僅提供未來一週，未來兩天的提供會在往後版本)
+     - F-D0047-???
+     - `Link <https://cwbplot.readthedocs.io/en/dev/example/F_D0047.html>`_ 
