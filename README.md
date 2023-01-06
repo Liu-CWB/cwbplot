@@ -1,6 +1,6 @@
-## cwbplot: Useful tools for weather data
+## cwbplot: Useful tools for meteorology data
 
-Several python useful tools for meteorology data visualization and data processing are supplied in this project.
+There are several useful tools for meteorology data visualization and data processing in this package.
 
 
 This package includes
