@@ -9,7 +9,7 @@ def read(fname):
         return fin.read()
 setup(
     name = "cwbplot",
-    version = "0.0.10",
+    version = "0.0.7",
     author = "cwbrfsteam",
     author_email = "littlepon4@hotmail.com",
     description = "Central weather bureau rfs team and open data useful tool for daily wrok.",
@@ -29,19 +29,21 @@ setup(
     package_data={'cwbplot': ['fonts/*.ttf','sharedata/*'],},
     python_requires=">=3.6",
     install_requires=[
-        "basemap>=1.2.1",
-        "pygrib>=2.0.4",
         "pandas>=1.0.3",
         "numpy>=1.17.3",
-        "matplotlib>=3.3.3",
+        "matplotlib>=3.3.3,<3.5.0",
+        "pygrib>=2.0.4",
         "requests>=2.25.0",
-        "netCDF4>=1.5.6",
+        "netcdf4>=1.5.6,<=1.6.0",
+        "basemap>=1.3.0",
+        "basemap-data>=1.3.0",
+        "basemap-data-hires>=1.3.0",
     ],
     extras_require={
                  'geotiff':['gdal>=2.4.1']
                    },
-    # setup_requires=[
-    #     "feedparser>=5.1.3",
+    #setup_requires=[
+    #     "pandas>=1.0.3",
     # ],
     # see http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[

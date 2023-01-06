@@ -5,7 +5,7 @@ import os
 from matplotlib.font_manager import FontProperties
 
 
-__version__= "0.0.9"
+__version__= "0.0.7"
 
 verlist = matplotlib.__version__.split(".")
 _cntjude4matplt = 0
