@@ -97,6 +97,11 @@ colormap
 
 .. image:: ./image/colormap/rain_nwprfs.png
 
+*nwprfs half transparency* rain(style='nwprfs_light1')
+
+.. image:: ./image/colormap/rain_nwprfs_light1.png
+
+
 *NPD* rain(style="NPD")
 
 .. image:: ./image/colormap/rain_npd.png

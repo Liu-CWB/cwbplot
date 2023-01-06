@@ -91,7 +91,7 @@ Cartopy is used for the projection setting of these graphs.
    :columns: 3
    
    - .. figure:: image/_gallery/O_B0055_001.png
-       :width: 600
+       :width: 200
      
        衛星圖(觀測,模式預報)
 

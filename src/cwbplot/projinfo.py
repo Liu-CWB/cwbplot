@@ -2,13 +2,21 @@ from mpl_toolkits.basemap import Basemap
 import pandas as pd
 import cwbplot
 
-pp = cwbplot.__path__[0]
-forlcc = pd.read_csv("{}/lcc.csv".format(pp),index_col=[0])
+WRFM04d01=[ 120.0, 27.065534591674805, 10.0, 40.0]
+WRFM04d02=[ 120.0, 27.065534591674805, 10.0, 40.0]
+WRFM05d01=[ 120.0, 27.065534591674805, 10.0, 40.0]
+WRFM05d02=[ 120.0, 27.065534591674805, 10.0, 40.0]
+RWRFM01d01=[ 120.0, 21.494176864624023, 10.0, 40.0]
+
+
+lcc = pd.DataFrame([WRFM04d01,WRFM04d02,WRFM05d01,WRFM05d02,RWRFM01d01],\
+                    columns =["lon0","lat0","lat1","lat2"],\
+                    index=["WRFM04d01","WRFM04d02","WRFM05d01","WRFM05d02","RWRFM01d01"])
 
 def wrfd(lon, lat,  domain, projection= 'lcc', res="l", cut = False, center =False, ax=False):
     idx = "WRFM04"+domain
-    lon0, lat0 = forlcc.loc[idx]["lon0"], forlcc.loc[idx]["lat0"]
-    lat1, lat2 = forlcc.loc[idx]["lat1"], forlcc.loc[idx]["lat2"]
+    lon0, lat0 = lcc.loc[idx]["lon0"], lcc.loc[idx]["lat0"]
+    lat1, lat2 = lcc.loc[idx]["lat1"], lcc.loc[idx]["lat2"]
     if cut == False and projection == 'lcc' and center == False:
         if ax == False:
             wrfproj = Basemap(projection=projection, resolution = res, rsphere = 6370000. ,
