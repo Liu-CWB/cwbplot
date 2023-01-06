@@ -1,6 +1,10 @@
 Metadata-Version: 2.1
 Name: cwbplot
+<<<<<<< HEAD:src/cwbplot.egg-info/PKG-INFO
 Version: 0.0.7
+=======
+Version: 0.0.8
+>>>>>>> dev:cwbplot.egg-info/PKG-INFO
 Summary: Central weather bureau rfs team and open data useful tool for daily wrok.
 Home-page: https://github.com/Liu-CWB/cwbplot
 Author: cwbrfsteam
@@ -18,10 +22,15 @@ Provides-Extra: geotiff
 License-File: LICENSE
 
 ## cwbplot: Useful tools for meteorology data
+<<<<<<< HEAD:src/cwbplot.egg-info/PKG-INFO
 
 
 There are several useful tools for meteorology data visualization and data processing in this package.
 
+=======
+
+There are several useful tools for meteorology data visualization and data processing in this package.
+>>>>>>> dev:cwbplot.egg-info/PKG-INFO
 
 
 This package includes
