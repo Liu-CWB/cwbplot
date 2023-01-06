@@ -9,7 +9,7 @@ def read(fname):
         return fin.read()
 setup(
     name = "cwbplot",
-    version = "0.0.4",
+    version = "0.0.7",
     author = "cwbrfsteam",
     author_email = "littlepon4@hotmail.com",
     description = "Central weather bureau rfs team and open data useful tool for daily wrok.",
