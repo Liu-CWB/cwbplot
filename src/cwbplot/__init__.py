@@ -4,6 +4,7 @@ import matplotlib
 import os
 from matplotlib.font_manager import FontProperties
 
+__version__="0.0.8"
 
 GISDATA="/nwpr/ait/p088/package/GISDATA"
 
