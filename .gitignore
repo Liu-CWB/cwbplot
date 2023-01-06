@@ -1,2 +1,4 @@
 dist/*
 build/*
+cwbplot.egg-info/*
+upload.readme
